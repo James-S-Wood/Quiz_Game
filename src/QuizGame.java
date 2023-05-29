@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/*Here's an updated version of the Quiz Game code that includes both a timer and a
+high score tracker*/
+
 public class QuizGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -58,6 +61,27 @@ public class QuizGame {
         System.out.println("Quiz completed!");
         System.out.println("Your score: " + score + "/" + numQuestions);
 
+        // High score tracking
+        String playerName;
+        int highScore = 0;
+        String highScorePlayer = "";
+
+        System.out.print("Enter your name: ");
+        playerName = scanner.nextLine();
+
+        if (score > highScore) {
+            highScore = score;
+            highScorePlayer = playerName;
+            System.out.println("Congratulations! New high score!");
+        } else if (score == highScore) {
+            System.out.println("You tied the high score!");
+        } else {
+            System.out.println("Try again to beat the high score!");
+        }
+
+        // Display the high score
+        System.out.println("High score: " + highScore + " by " + highScorePlayer);
+
         scanner.close();
     }
 }
@@ -75,4 +99,9 @@ within the time limit for each question. If the user takes longer to answer,
 will still move on to the next question. If you want to enforce strict time limits
 for each question, additional logic would be required. Feel free to customize the
 timer feature or add other enhancements according to your requirements.
+ */
+
+/*In this updated code, the timer feature from the previous example is maintained.
+The timer tracks the time spent on each question and breaks the loop if the remaining
+time reaches zero or goes negative, displaying a "Time's up!" message.
  */
