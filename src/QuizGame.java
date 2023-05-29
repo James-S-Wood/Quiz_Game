@@ -8,13 +8,17 @@ public class QuizGame {
         String[] questions = {
                 "What is the capital of France?",
                 "Who painted the Mona Lisa?",
-                "What is the largest planet in our solar system?"
+                "What is the largest planet in our solar system?",
+                "Which country is known as the Land of the Rising Sun?",
+                "Who wrote the play Romeo and Juliet?"
         };
 
         String[] answers = {
                 "Paris",
                 "Leonardo da Vinci",
-                "Jupiter"
+                "Jupiter",
+                "Japan",
+                "William Shakespeare"
         };
 
         // Number of questions and score initialization
