@@ -1,21 +1,34 @@
-Here's an updated version of the Quiz Game code that includes both a timer and a
-high score tracker
+# Quiz Game
 
-In this updated code, I have added a timer feature using the System.currentTimeMillis()
-method. The startTime variable stores the starting time of the quiz, and on each
-iteration of the loop, the remaining time is calculated by subtracting the elapsed time
-from the starting time. If the remaining time for a question reaches zero or goes
-negative, the game displays a "Time's up!" message and ends. The duration per question
-is set to 10 seconds in the SECONDS_PER_QUESTION variable, but you can adjust it
-according to your preference.
+The Quiz Game is a simple Java program that allows users to test their knowledge by answering a series of questions. It provides a timer feature to add a time constraint for each question and includes a high score tracker to keep track of the highest scores achieved by players.
 
-Note that the timer implementation assumes that the user will provide an answer
-within the time limit for each question. If the user takes longer to answer,
-will still move on to the next question. If you want to enforce strict time limits
-for each question, additional logic would be required. Feel free to customize the
-timer feature or add other enhancements according to your requirements.
+## Features
+
+- Multiple-choice questions: The program presents a series of questions to the user.
+- Timer: Each question has a time limit for the user to provide an answer.
+- High score tracker: The program tracks the highest scores achieved by players and displays them.
+
+## Getting Started
+
+1. Make sure you have Java installed on your system.
+2. Clone this repository:
+3. Compile the Java source file:
+4. Run the program:
+5. Follow the instructions in the console to play the quiz game.
+
+## Customization
+
+- Questions and Answers: You can customize the questions and answers by modifying the `questions` and `answers` arrays in the `QuizGame.java` file. Simply add or remove elements from the arrays to include your desired questions.
+- Timer Duration: The timer duration per question can be adjusted by modifying the `SECONDS_PER_QUESTION` variable in the `QuizGame.java` file.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 
-In this updated code, the timer feature from the previous example is maintained.
-The timer tracks the time spent on each question and breaks the loop if the remaining
-time reaches zero or goes negative, displaying a "Time's up!" message.
+
+
